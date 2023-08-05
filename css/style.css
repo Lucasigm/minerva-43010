@@ -217,6 +217,10 @@ header{
     flex-wrap: wrap;
 }
 
+.main-productos{
+    margin-top: 75px;
+}
+
 .producto h2{
     font-size: 32px;
     font-weight: bolder;
@@ -269,6 +273,13 @@ header{
     margin: 15px;
 }
 
+/*---------- PAGINA SERVICIOS ----------*/
+
+.main-servicios{
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
 /*---------- PAGINA CONTACTO ----------*/
 .contact-page{
     font-size: 20px;
@@ -282,6 +293,9 @@ header{
     font-size: 22px;
 }
 
+.main-contacto{
+    margin: 130px;
+}
 
 /*---------- FOOTER ----------*/
 footer{
