@@ -1,0 +1,21 @@
+footer{
+    background-color: $quinary-color;
+    color: $quaternary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    div{
+        a{
+            img{
+                margin: 20px;
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+    .mensaje{
+        text-align: center;
+        margin-right: 50px;
+    }
+}

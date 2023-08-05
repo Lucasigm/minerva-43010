@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Roboto+Slab:wght@400;600&display=swap');
+
+
+/*---------- RESET ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.boton{
+    text-decoration: none;
+    font-size: 18px;
+    color: #EDF7F6;
+    background-color: black;
+    border: 2px white solid;
+    padding: 10px;
+    font-weight: 600;
+    &:hover{
+        background-color: #ffc800;
+        color: whitesmoke;
+    }
+    &:active{
+        background-color: #ffe27a;
+        color: black;
+    }
+}
