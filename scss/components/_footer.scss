@@ -1,6 +1,6 @@
 footer{
-    background-color: $quinary-color;
-    color: $quaternary-color;
+    background-color: nth($paleta-colores, 6);
+    color: nth($paleta-colores, 5);
     display: flex;
     justify-content: space-between;
     align-items: center;

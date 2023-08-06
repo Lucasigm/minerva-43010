@@ -15,14 +15,14 @@ body {
 .boton {
   text-decoration: none;
   font-size: 18px;
-  color: #EDF7F6;
+  color: white;
   background-color: black;
   border: 2px white solid;
   padding: 10px;
   font-weight: 600; }
   .boton:hover {
     background-color: #ffc800;
-    color: whitesmoke; }
+    color: white; }
   .boton:active {
     background-color: #ffe27a;
     color: black; }
@@ -64,6 +64,7 @@ header {
 
 .sobre-nosotros {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 25px;
@@ -104,6 +105,7 @@ header {
 
 .producto .card-flex {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; }
@@ -139,6 +141,7 @@ header {
 .page-nosotros {
   font-size: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px; }
@@ -201,6 +204,7 @@ header {
   .main-contacto .contact-page {
     font-size: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 20px; }

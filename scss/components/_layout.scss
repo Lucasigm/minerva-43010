@@ -1,22 +1,19 @@
 .hero{
-    color: $quaternary-color;
+    color: nth($paleta-colores, 5);
     width: 100%;
     height: calc(100vh - 148px);
     text-align: center;
-    background-color: $primary-color;
+    background-color: nth($paleta-colores, 1);
     background-image: url(../img/velas-encendidas.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, column, center, center);
     h2{
         display: inline-block;
         font-size: 70px;
-        border: 5px $quaternary-color solid;
+        border: 5px nth($paleta-colores, 5) solid;
         padding: 15px;
     }
     p{
@@ -27,9 +24,7 @@
 }
 
 .sobre-nosotros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, row, center, center);
     margin: 25px;
     margin-bottom: 50px;
     div{
@@ -56,7 +51,7 @@
     background-attachment: fixed;
     margin-bottom: 20px;
     h2{
-        color: $quaternary-color;
+        color: nth($paleta-colores, 5);
         background-color: rgba(0, 0, 0, 0.677);
         text-align: center;
         font-weight: bolder;
@@ -70,20 +65,18 @@
         font-size: 32px;
         font-weight: bolder;
         text-align: center;
-        border: 2px $secondary-color solid;
+        border: 2px nth($paleta-colores, 2) solid;
         margin: 15px;
         padding: 5px;
     }
     .card-flex{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (flex, row, space-around, center);
         flex-wrap: wrap;
         div{
             width: 250px;
             height: 350px;
-            border: 2px $secondary-color solid;
-            background-color: $quaternary-color;
+            border: 2px nth($paleta-colores, 2) solid;
+            background-color: nth($paleta-colores, 5);
             text-align: center;
             margin: 50px;
             box-shadow: 11px 10px 21px -1px rgba(0,0,0,0.71);
@@ -109,7 +102,7 @@
         text-align: center;
         font-size: 30px;
         font-weight: bolder;
-        border: $secondary-color 2px solid;
+        border: nth($paleta-colores, 2) 2px solid;
         padding: 5px;
         margin: 15px;
     }
@@ -117,13 +110,11 @@
 
 .page-nosotros{
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, row, center, center);
     margin: 20px;
     section{
         h2{
-            border: $secondary-color 2px solid;
+            border: nth($paleta-colores, 2) 2px solid;
             text-align: center;
             margin: 15px;
             font-weight: bolder;
@@ -131,7 +122,7 @@
         img{
             width: 650px;
             height: 500px;
-            border: $secondary-color 2px solid;
+            border: nth($paleta-colores, 2) 2px solid;
         }
     }
 }
@@ -157,7 +148,7 @@
         h3{
             position: absolute;
             bottom: 0;
-            color: $quaternary-color;
+            color: nth($paleta-colores, 5);
             background-color: rgba(0, 0, 0, 0.697);
             font-weight: bolder;
             font-size: 20px;
@@ -195,9 +186,7 @@
     margin: 130px;
     .contact-page{
         font-size: 20px;
-        display: flex;
-        justify-content:  center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         margin: 20px;
         form{
             div{

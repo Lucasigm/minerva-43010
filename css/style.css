@@ -30,16 +30,16 @@ header nav div a img{
     margin-left: 15px;
     margin-right: 15px;
 }
-/*---------- MAIN ----------*/
+/*!---------- MAIN ----------*/
 
 /*---------- HERO SECTION ----------*/
 
 .hero {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     height: calc(100vh - 148px);
     text-align: center;
-    background-color: #797270;
+    background-color: rgb(121, 114, 112);
     background-image: url(../img/velas-encendidas.jpeg);
     background-position: center;
     background-size: cover;
@@ -54,7 +54,7 @@ header nav div a img{
 .hero h2{
     display: inline-block;
     font-size: 70px;
-    border: 5px #EDF7F6 solid;
+    border: 5px rgb(255, 255, 255) solid;
     padding: 15px;
 }
 
@@ -67,20 +67,20 @@ header nav div a img{
 .boton{
     text-decoration: none;
     font-size: 18px;
-    color: #EDF7F6;
-    background-color: black;
-    border: 2px white solid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
     padding: 10px;
     font-weight: 600;
 }
 
 .boton:hover{
     background-color: rgb(255, 200, 0);
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
 }
 
 .boton:active{
-    background-color: #ffe27a;
+    background-color: rgb(255, 226, 122);
     color: black;
 }
 
@@ -121,7 +121,7 @@ header nav div a img{
 }
 
 .background h2{
-    color: #EDF7F6;
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.677);
     text-align: center;
     font-weight: bolder;
@@ -139,7 +139,7 @@ header nav div a img{
 }
 
 .page-nosotros section h2{
-    border: black 2px solid;
+    border: rgb(0, 0, 0) 2px solid;
     text-align: center;
     margin: 15px;
     font-weight: bolder;
@@ -180,7 +180,7 @@ header nav div a img{
 .grid-item h3{
     position: absolute;
     bottom: 0;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.697);
     font-weight: bolder;
     font-size: 20px;

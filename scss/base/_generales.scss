@@ -9,8 +9,8 @@
 }
 
 *::selection{
-    background-color: black;
-    color: white;
+    background-color:nth($paleta-colores, 2);
+    color: nth($paleta-colores, 5);
 }
 
 body{
@@ -20,17 +20,17 @@ body{
 .boton{
     text-decoration: none;
     font-size: 18px;
-    color: #EDF7F6;
-    background-color: black;
-    border: 2px white solid;
+    color: nth($paleta-colores, 5);
+    background-color: nth($paleta-colores, 2);
+    border: 2px nth($paleta-colores, 5) solid;
     padding: 10px;
     font-weight: 600;
     &:hover{
-        background-color: #ffc800;
-        color: whitesmoke;
+        background-color: nth($paleta-colores, 3);
+        color: nth($paleta-colores, 5);
     }
     &:active{
-        background-color: #ffe27a;
-        color: black;
+        background-color: nth($paleta-colores, 4);
+        color: nth($paleta-colores, 2);
     }
 }

@@ -1,5 +1,20 @@
-$primary-color: rgb(121, 114, 112);
-$secondary-color: rgb(0, 0, 0);
-$tertiary-color: rgb(255, 200, 0);
-$quaternary-color: rgb(255, 255, 255);
-$quinary-color: rgb(147, 168, 172);
+//! VARIABLES
+
+$paleta-colores:
+rgb(121, 114, 112),
+rgb(0, 0, 0),
+rgb(255, 200, 0),
+rgb(255, 226, 122),
+rgb(255, 255, 255),
+rgb(147, 168, 172);
+
+
+//! MIXING 🌈
+
+@mixin flex ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
