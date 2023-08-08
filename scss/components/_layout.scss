@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     @include flex (flex, column, center, center);
-    h2{
+    h1{
         display: inline-block;
         font-size: nth($font-size, 1);
         border: 5px nth($paleta-colores, 5) solid;
@@ -61,7 +61,7 @@
 
 .producto{
 
-    h2{
+    h2, h1{
         @extend %subtitulo;
     }
     .card-flex{
@@ -106,8 +106,8 @@
     font-size: nth($font-size, 4);
     @include flex (flex, row, center, center);
     margin: 20px;
-    section{
-        h2{
+    div{
+        h1{
             @extend %subtitulo;
         }
         img{
@@ -175,6 +175,9 @@
 
 .main-contacto{
     margin: 130px;
+    h1{
+        @extend %subtitulo;
+    }
     .contact-page{
         font-size: nth($font-size, 4);
         @include flex (flex, row, center, center);
