@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Roboto+Slab:wght@400;600&display=swap");
+.producto h2, .acordeon .titulo-acordeon, .page-nosotros section h2 {
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  border: 2px black solid;
+  margin: 15px;
+  padding: 5px; }
+
 /*---------- RESET ----------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-*::selection {
-  background-color: black;
-  color: white; }
+  *::selection {
+    background-color: black;
+    color: white; }
 
 body {
   font-family: 'Roboto Slab', serif; }
@@ -95,14 +102,6 @@ header {
     font-weight: bolder;
     padding: 25px; }
 
-.producto h2 {
-  font-size: 32px;
-  font-weight: bolder;
-  text-align: center;
-  border: 2px black solid;
-  margin: 15px;
-  padding: 5px; }
-
 .producto .card-flex {
   display: flex;
   flex-direction: row;
@@ -116,9 +115,12 @@ header {
     background-color: white;
     text-align: center;
     margin: 50px;
-    box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71);
-    -webkit-box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71);
-    -moz-box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71); }
+    transition: 1s; }
+    .producto .card-flex div:hover {
+      transform: scale(1.1);
+      box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71);
+      -webkit-box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71);
+      -moz-box-shadow: 11px 10px 21px -1px rgba(0, 0, 0, 0.71); }
     .producto .card-flex div h3 {
       margin-bottom: 50px;
       font-size: 20px;
@@ -130,13 +132,6 @@ header {
 .acordeon {
   margin-top: 5px;
   margin-bottom: 15px; }
-  .acordeon .titulo-acordeon {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    border: black 2px solid;
-    padding: 5px;
-    margin: 15px; }
 
 .page-nosotros {
   font-size: 20px;
@@ -145,11 +140,6 @@ header {
   justify-content: center;
   align-items: center;
   margin: 20px; }
-  .page-nosotros section h2 {
-    border: black 2px solid;
-    text-align: center;
-    margin: 15px;
-    font-weight: bolder; }
   .page-nosotros section img {
     width: 650px;
     height: 500px;
@@ -209,12 +199,13 @@ header {
     align-items: center;
     margin: 20px; }
     .main-contacto .contact-page form div div h3 {
-      font-size: 22px; }
+      font-size: 20px; }
 
 footer {
   background-color: #93a8ac;
   color: white;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px; }

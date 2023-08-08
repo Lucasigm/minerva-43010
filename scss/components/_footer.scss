@@ -1,9 +1,7 @@
 footer{
     background-color: nth($paleta-colores, 6);
     color: nth($paleta-colores, 5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, row, space-between, center);
     padding: 20px;
     div{
         a{

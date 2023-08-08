@@ -6,11 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-*::selection{
-    background-color:nth($paleta-colores, 2);
-    color: nth($paleta-colores, 5);
+    &::selection{
+        background-color:nth($paleta-colores, 2);
+        color: nth($paleta-colores, 5);
+    }
 }
 
 body{

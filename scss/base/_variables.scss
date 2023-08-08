@@ -8,6 +8,11 @@ rgb(255, 226, 122),
 rgb(255, 255, 255),
 rgb(147, 168, 172);
 
+$font-size:
+70px,
+30px,
+40px,
+20px;
 
 //! MIXING 🌈
 
@@ -16,5 +21,16 @@ rgb(147, 168, 172);
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+//! EXTEND
+
+%subtitulo{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px nth($paleta-colores, 2) solid;
+    margin: 15px;
+    padding: 5px;
 }
 
