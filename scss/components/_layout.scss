@@ -4,11 +4,12 @@
     height: calc(100vh - 148px);
     text-align: center;
     background-color: nth($paleta-colores, 1);
-    background-image: url(../img/velas-encendidas.jpeg);
+    background-image: url(../img/velas-encendidas.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
     @include flex (flex, column, center, center);
     h1{
         display: inline-block;
@@ -67,6 +68,7 @@
     .card-flex{
         @include flex (flex, row, space-around, center);
         flex-wrap: wrap;
+        overflow: hidden;
         div{
             width: 250px;
             height: 350px;

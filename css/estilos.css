@@ -38,11 +38,13 @@ header {
   height: 100px;
   font-size: 25px;
   margin-bottom: 55px; }
-  header nav div a img {
-    width: 100px;
-    height: 100%;
-    margin-left: 15px;
-    margin-right: 15px; }
+  header nav {
+    z-index: 99; }
+    header nav div a img {
+      width: 100px;
+      height: 100%;
+      margin-left: 15px;
+      margin-right: 15px; }
 
 .hero {
   color: white;
@@ -50,11 +52,12 @@ header {
   height: calc(100vh - 148px);
   text-align: center;
   background-color: #797270;
-  background-image: url(../img/velas-encendidas.jpeg);
+  background-image: url(../img/velas-encendidas.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,7 +110,8 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow: hidden; }
   .producto .card-flex div {
     width: 250px;
     height: 350px;
@@ -250,8 +254,12 @@ footer {
   .hero p {
     font-size: 25px; } }
 
+@media screen and (max-width: 600px) {
+  .main-contacto {
+    margin: 75px 0px 0px 0px; } }
+
 @media screen and (max-width: 700px) {
-  .page-nosotros section img {
+  .page-nosotros div img {
     display: none; } }
 
 @media screen and (max-width: 450px) {
